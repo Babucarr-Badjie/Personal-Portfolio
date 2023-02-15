@@ -1,4 +1,6 @@
 import { useTypewriter } from "react-simple-typewriter";
+import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import profile from "../../assests/images/profile-pic.png";
 export default function Home() {
   // react typewriter hook
   const [textContent] = useTypewriter({
@@ -15,10 +17,10 @@ export default function Home() {
   return (
     <section
       id="home"
-      className=" flex w-full h-[800px] pt-10 pb-20 
-       border-b-[1px] border-b-black"
+      className=" flex w-full h-100vh pt-10 pb-20 
+       border-b-[1px] border-b-black mt-16"
     >
-      <div className="w-1/2">
+      <div className="w-1/2 flex flex-col gap-14 mt-10">
         <div className="flex flex-col gap-6">
           <h4 className="font-normal text-2xl ">
             Hello there! Welcome to my World.{" "}
@@ -27,7 +29,7 @@ export default function Home() {
             I'm{" "}
             <span
               className="uppercase text-designColor 
-              tracking-widest italic"
+              tracking-widest font-extrabold"
             >
               Babucarr
             </span>{" "}
@@ -35,12 +37,50 @@ export default function Home() {
           <h2 className="text-4xl font-extrabold">
             a <span>{textContent}</span>
           </h2>
-          <p className="leading-6 tracking-widest">
+          <p className="leading-9 tracking-widest text-xl ">
             Capable of building applications with frontend operations.
           </p>
         </div>
+        <div>
+          <h1 className="tracking-widest">GET IN TOUCH</h1>
+          <div className="flex gap-10 mt-5">
+            <span className="profileIcon">
+              <a
+                href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
+                target="_"
+              >
+                <FaLinkedin />
+              </a>
+            </span>
+            <span className="profileIcon">
+              <a
+                href="https://www.facebook.com/babucarr.badjie.37"
+                target="_
+              "
+              >
+                <FaFacebook />
+              </a>
+            </span>
+            <span className="profileIcon">
+              <a href="https://www.instagram.com/bax_bagie/" target="_">
+                <FaInstagram />
+              </a>
+            </span>
+            <span className="profileIcon">
+              <a href="https://github.com/Babucarr-Badjie" target="_">
+                <FaGithub />
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
-      <div className="w-1/2"></div>
+      <div className="w-1/2 flex justify-center items-start mt-10">
+        <img
+          className="w-[400px] h-[400px] z-index-10"
+          src={profile}
+          alt="profile"
+        />
+      </div>
     </section>
   );
 }

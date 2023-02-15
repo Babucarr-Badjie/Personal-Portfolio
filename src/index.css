@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ======styling home (profile) icons */
+
+@layer components {
+  .profileIcon {
+    @apply w-10 h-10 bg-black rounded-full text-gray-200 text-2xl 
+    inline-flex items-center justify-center shadow-shadowOne
+    hover:bg-opacity-40 hover:translate-y-1 transition-all
+    hover:text-orange-500 cursor-pointer duration-200;
+  }
+}
+
+.active {
+  color: #868080;
+}
