@@ -1,12 +1,13 @@
-
-
 export default function About() {
   return (
-    <section id="about"
-      className=" flex w-full h-[800px] pt-10 pb-20 
-   border-b-[1px] border-b-black"
+    <section
+      id="about"
+      className=" w-full h-[100vh] pt-10 pb-20 
+      border-b-[1px] border-b-black"
     >
-      About
+      <div className="flex justify-center mt-5">
+        <h1 className="text-3xl font-extrabold">ABOUT ME</h1>
+      </div>
     </section>
   );
 }
