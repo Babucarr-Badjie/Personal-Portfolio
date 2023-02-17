@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className=" flex w-full h-100vh pt-10 pb-20 
+      className=" flex w-full h-100% pt-10 pb-20 
        border-b-[1px] border-b-black mt-16"
     >
       <div className="w-1/2 flex flex-col gap-14 mt-10">

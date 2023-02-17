@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className=" w-full h-[100vh] pt-10 pb-20 
+      className=" w-full h-[100%] pt-10 pb-20 
       border-b-[1px] border-b-black"
     >
       <div className="flex justify-center mt-5">

@@ -1,12 +1,13 @@
-import logo from "../assests/images/logo.png";
 import { navbarLinks } from "../assests/NavbarData";
 import { Link } from "react-scroll";
+import logo from "../assests/images/logo.png";
 
 export default function Navbar() {
   return (
     <div
       className="w-full h-34 mx-auto flex justify-between items-center 
-    font-titleFont border-b-[1px] border-b-gray-600 sticky top-0 z-index-50 bg-bodyColor"
+    font-titleFont border-b-[1px] border-b-gray-600 sticky top-0
+     z-index-50 bg-bodyColor"
     >
       <div className="mt-3">
         <img
