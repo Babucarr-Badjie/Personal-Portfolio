@@ -13,16 +13,16 @@ export default function Navbar() {
         <img
           src={logo}
           alt="logo"
-          className="object-scale-down h-18 w-20 rounded-full "
+          className="object-scale-down h-18 w-20 rounded-full cursor-pointer "
         />
-        <span className="tracking-widest">Babucarr</span>
+        <span className="tracking-widest cursor-pointer">Babucarr</span>
       </div>
       <div>
         <ul className="flex items-center gap-10">
           {navbarLinks.map((navbarLink) => (
             <li
               className="text-xl font-normal text-gray-200 tracking-wide 
-              cursor-pointer hover:text-designColor duration-200  "
+              cursor-pointer hover:text-textColor duration-200  "
               key={navbarLink.id}
             >
               <Link

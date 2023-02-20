@@ -1,7 +1,12 @@
 import React from "react";
-import { FaGithub, FaGlobe } from "react-icons/fa";
 
-export default function ProjectCard({ projectTitle, projectDescription, src }) {
+export default function ProjectCard({
+  projectTitle,
+  projectDescription,
+  src,
+  githubLink,
+  websiteLink,
+}) {
   return (
     <div
       className="w-full px-12 h-auto py-10 rounded-lg shadow-shadowOne
@@ -27,7 +32,7 @@ export default function ProjectCard({ projectTitle, projectDescription, src }) {
             hover:text-designColor duration-200 cursor-pointer"
             >
               {" "}
-              <FaGithub />
+              {githubLink}
             </span>
             <span
               className="text-lg w-10 h-10 rounded-full bg-black 
@@ -35,11 +40,11 @@ export default function ProjectCard({ projectTitle, projectDescription, src }) {
               hover:text-designColor duration-200 cursor-pointer"
             >
               {" "}
-              <FaGlobe />
+              {websiteLink}
             </span>
           </div>
         </div>
-        <div className="mt-5 ">{projectDescription}</div>
+        <div className="mt-5">{projectDescription}</div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import projectOne from "../../assests/images/matching-game.PNG";
 import projectTwo from "../../assests/images/event-tracking.PNG";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
   return (
@@ -19,6 +20,19 @@ export default function Project() {
           The project was built using React.js with CSS3. This project ustilize 
           the use of React Hooks such as useState, useEffect and many more."
           src={projectOne}
+          githubLink={
+            <a
+              href="https://github.com/Babucarr-Badjie/Matching-images-game"
+              target="_"
+            >
+              <FaGithub />
+            </a>
+          }
+          websiteLink={
+            <a href="https://lively-medovik-4d7614.netlify.app/" target="_">
+              <FaGlobe />
+            </a>
+          }
         />
         <ProjectCard
           projectTitle="Diary App"
@@ -27,6 +41,16 @@ export default function Project() {
           the location. The main tools used in this project is React.js 
           and CSS3. "
           src={projectTwo}
+          githubLink={
+            <a href="https://github.com/Babucarr-Badjie/Events-App" target="_">
+              <FaGithub />
+            </a>
+          }
+          websiteLink={
+            <a href="https://comfy-syrniki-260454.netlify.app/" target="_">
+              <FaGlobe />
+            </a>
+          }
         />
         <ProjectCard />
         <ProjectCard />

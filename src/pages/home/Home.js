@@ -76,7 +76,7 @@ export default function Home() {
       </div>
       <div className="w-1/2 flex justify-center items-start mt-10">
         <img
-          className="w-[400px] h-[400px] z-index-10"
+          className="w-[250px] h-[250px] z-index-10"
           src={profile}
           alt="profile"
         />
