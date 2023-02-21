@@ -1,3 +1,4 @@
+import AboutCard from "./AboutCard";
 export default function About() {
   return (
     <section
@@ -34,17 +35,29 @@ export default function About() {
         <a href="../../assests/Resume.pdf" download>
           <button
             className="bg-orange-500 py-2 px-2 hover:bg-slate-300
-         hover:text-black rounded-md"
+            hover:text-black rounded-md"
           >
             Download CV
           </button>
         </a>
       </div>
-      <div>
-        <h2 className="text-4xl font-bold">Master Degree</h2>
-        <p className="text-sm text-designColor tracking-[4px] py-5">
-          2017 ~ 2019
-        </p>
+      <div
+        className="mt-14 w-full h-[400px] border-l-[5px] border-black
+          border-opacity-30 flex flex-col gap-10 "
+      >
+        <h2 className="text-4xl font-bold ml-5 ">Education Background</h2>
+        <AboutCard
+          header="Master Degree"
+          time="2017~2019"
+          school="National Taiwan University of Science & Technology, Taiwan "
+          major="Civil & Construction Engineering"
+        />
+        <AboutCard
+          header="Bachelor Degree"
+          time="2012~2016"
+          school="National Taipei University of Technology, Taiwan "
+          major="Civil Engineering"
+        />
       </div>
     </section>
   );
