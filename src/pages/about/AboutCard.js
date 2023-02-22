@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AboutCard({ header, time, school, major }) {
   return (
     <div className="w-full h-3/4 group flex">
@@ -15,7 +13,7 @@ export default function AboutCard({ header, time, school, major }) {
         </span>
       </div>
       <div
-        className="w-3/4 bg-black bg-opacity-20 hover:bg-opacity-30
+        className="w-full bg-black bg-opacity-20 hover:bg-opacity-30
         duration-300 rounded-lg px-10 flex flex-col gap-10 shadow-shadowOne"
       >
         <div className="flex justify-between items-center">
