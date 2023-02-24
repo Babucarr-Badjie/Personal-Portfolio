@@ -7,7 +7,7 @@ export default function Navbar() {
     <div
       className="w-full h-34 mx-auto flex justify-between items-center 
     font-titleFont border-b-[1px] border-b-gray-600 sticky top-0
-     z-index-50 bg-bodyColor"
+     z-50 bg-bodyColor"
     >
       <div className="mt-3">
         <img

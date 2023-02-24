@@ -1,7 +1,7 @@
-import Education from "./Education";
+import Education from "./education/Education";
 import KnowMe from "./KnowMe";
 import Skills from "./Skills";
-import Experience from "./Experience";
+import Experience from "./experience/Experience";
 import { useState } from "react";
 
 export default function About() {

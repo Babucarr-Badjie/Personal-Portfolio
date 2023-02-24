@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import AboutCard from "./AboutCard";
+import EducationCard from "./EducationCard";
 
 export default function Education() {
   return (
@@ -12,15 +12,15 @@ export default function Education() {
         border-opacity-30 flex flex-col gap-10 "
       >
         <h2 className="text-4xl font-bold ml-5 ">Education Background</h2>
-        <AboutCard
+        <EducationCard
           header="Master Degree"
-          time="2017~2019"
+          time="2017 ~ 2019"
           school="National Taiwan University of Science & Technology, Taiwan "
           major="Civil & Construction Engineering"
         />
-        <AboutCard
+        <EducationCard
           header="Bachelor Degree"
-          time="2012~2016"
+          time="2012 ~ 2016"
           school="National Taipei University of Technology, Taiwan "
           major="Civil Engineering"
         />

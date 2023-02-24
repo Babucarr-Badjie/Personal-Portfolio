@@ -1,10 +1,10 @@
-export default function AboutCard({ header, time, school, major }) {
+export default function EducationCard({ header, time, school, major }) {
   return (
-    <div className="w-full h-3/4 group flex">
+    <div className="w-full h-1/2 group flex">
       <div className="w-10 h-[6px] bgOpacity mt-16 relative">
         <span
           className="absolute w-5 h-5 rounded-full -top-2 -left-3
-              flex justify-center items-center bg-black bg-opacity-60"
+          flex justify-center items-center bg-black bg-opacity-60"
         >
           <span
             className="w-3 h-3 rounded-full bg-bodyColor inline-flex
@@ -20,7 +20,7 @@ export default function AboutCard({ header, time, school, major }) {
           <div>
             <h2
               className="text-3xl font-bold mt-5 group-hover:text-textColor
-            duration-300"
+              duration-300"
             >
               {header}
             </h2>
@@ -30,8 +30,8 @@ export default function AboutCard({ header, time, school, major }) {
           <div>
             <h3
               className="w-30 h-12 text-designColor bg-black 
-            bg-opacity-25 rounded-lg flex justify-center items-center
-            shadow-shadowOne text-md px-2 font-medium"
+              bg-opacity-25 rounded-lg flex justify-center items-center
+              shadow-shadowOne text-md px-2 font-medium"
             >
               {time}
             </h3>

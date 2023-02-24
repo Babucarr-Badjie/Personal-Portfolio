@@ -7,6 +7,7 @@ export default function KnowMe() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      className="mt-14"
     >
       <h2 className="text-4xl font-bold ">Career Objective</h2>
       <p className="leading-8 py-5">
@@ -24,8 +25,8 @@ export default function KnowMe() {
       </p>
       <a href={Resume} download>
         <button
-          className="bg-orange-500 py-2 px-2 hover:bg-slate-300
-      hover:text-black rounded-md"
+          className="bg-orange-500 py-3 px-5 hover:bg-slate-300
+      hover:text-black rounded-md hover:-translate-y-1 transition-all mt-5"
         >
           Download CV
         </button>
