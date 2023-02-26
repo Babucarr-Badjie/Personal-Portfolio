@@ -34,7 +34,7 @@ export default function Home() {
               Babucarr
             </span>{" "}
           </h1>
-          <h2 className="text-4xl font-extrabold">
+          <h2 className="text-3xl font-extrabold">
             a <span>{textContent}</span>
           </h2>
           <p className="leading-9 tracking-widest text-xl ">
@@ -45,11 +45,11 @@ export default function Home() {
           <h1 className="tracking-widest">GET IN TOUCH</h1>
           <div className="flex gap-10 mt-5">
             <span className="profileIcon">
-              <a
+              <a 
                 href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
                 target="_"
               >
-                <FaLinkedin />
+                <FaLinkedin /> 
               </a>
             </span>
             <span className="profileIcon">
