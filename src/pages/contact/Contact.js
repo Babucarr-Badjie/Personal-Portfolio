@@ -15,23 +15,34 @@ export default function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
+  // ========== Email Validation ==============
+  const emailValidation = () => {
+    return String(userEmail)
+      .toLocaleLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  };
+
   // handle button click function
   const handleClick = (e) => {
     e.preventDefault();
     if (userName === "") {
-      setErrorMessage("Please provide your name");
+      setErrorMessage("Name is required!");
     } else if (contactNumber === "") {
-      setErrorMessage("Please provide your contact number");
+      setErrorMessage("Contact number is required!");
     } else if (comapanyName === "") {
-      setErrorMessage("Please provide your company information");
+      setErrorMessage("Company name is required!");
     } else if (userPosition === "") {
-      setErrorMessage("Please provide your position description");
+      setErrorMessage("Position description is required!");
     } else if (userEmail === "") {
-      setErrorMessage("Please provide your email address");
+      setErrorMessage("Email address is required!");
+    } else if (!emailValidation(userEmail)) {
+      setErrorMessage("That email address is not valid!");
     } else if (message === "") {
-      setErrorMessage("Please provide your message");
+      setErrorMessage("Please provide your message!");
     } else {
-      setSuccessMessage(`Thank you ${userName}, your message is sent successfully!`);
+      setSuccessMessage(
+        `Thank you ${userName}, your message is sent successfully!`
+      );
       setErrorMessage("");
       setUserName("");
       setContactNumber("");
@@ -125,7 +136,7 @@ export default function Contact() {
           >
             <form className="w-full">
               {/* =====display error meesage when fiels not filled  */}
-              {errorMessage && <p className="error">{errorMessage}</p>}
+              {errorMessage && <p className="fail">{errorMessage}</p>}
 
               <div className="w-100% flex gap-5">
                 <div className="w-[50%] flex flex-col gap-3">
@@ -133,10 +144,12 @@ export default function Contact() {
                   <input
                     onChange={(e) => setUserName(e.target.value)}
                     value={userName}
-                    className="contactFieldInputs"
+                    className={`${
+                      errorMessage === "Name is required!" &&
+                      "outline-designColor"
+                    } contactFieldInputs`}
                     type="text"
                     name="name"
-                    placeholder="Name"
                     required
                   />
                 </div>
@@ -145,10 +158,12 @@ export default function Contact() {
                   <input
                     onChange={(e) => setContactNumber(e.target.value)}
                     value={contactNumber}
-                    className="contactFieldInputs"
+                    className={`${
+                      errorMessage === "Contact number is required!" &&
+                      "outline-designColor"
+                    } contactFieldInputs`}
                     type="text"
                     name="phone number"
-                    placeholder="Phone Number"
                     required
                   />
                 </div>
@@ -159,10 +174,12 @@ export default function Contact() {
                   <input
                     onChange={(e) => setCompanyName(e.target.value)}
                     value={comapanyName}
-                    className="contactFieldInputs"
+                    className={`${
+                      errorMessage === "Company name is required!" &&
+                      "outline-designColor"
+                    } contactFieldInputs`}
                     type="text"
                     name="company name"
-                    placeholder="Company name"
                     required
                   />
                 </div>
@@ -171,23 +188,27 @@ export default function Contact() {
                   <input
                     onChange={(e) => setUserPostion(e.target.value)}
                     value={userPosition}
-                    className="contactFieldInputs"
+                    className={`${
+                      errorMessage === "Position description is required!" &&
+                      "outline-designColor"
+                    } contactFieldInputs`}
                     type="text"
                     name="position"
-                    placeholder="Position"
                     required
                   />
                 </div>
               </div>
               <div className="w-100% py-3">
-                <p className="text-md tracking-wider mb-3">Email Address:</p>
+                <p className="text-md tracking-wider ">Email Address:</p>
                 <input
                   onChange={(e) => setUserEmail(e.target.value)}
                   value={userEmail}
-                  className="contactFieldInputs"
+                  className={`${
+                    errorMessage === "Email address is required!" &&
+                    "outline-designColor"
+                  } contactFieldInputs`}
                   type="text"
                   name="email"
-                  placeholder="email address"
                 />
               </div>
               <div className="w-100%  py-3">
@@ -195,18 +216,19 @@ export default function Contact() {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
-                  className="contactTextArea"
+                  className={`${
+                    errorMessage === "Please provide your message!" &&
+                    "outline-designColor"
+                  } contactTextArea`}
                   name="Message"
-                  rows="6"
-                  placeholder="Message"
-                  required
+                  rows="7"
                 ></textarea>
               </div>
               <div>
                 <button
                   onClick={handleClick}
                   className="w-full h-12 rounded-lg bg-orange-200
-                hover:border-[2px] mt-8 font-bold
+                hover:border-[2px]  font-bold
                 hover:bg-white text-black transition-all duration-300"
                 >
                   SEND MESSAGE
