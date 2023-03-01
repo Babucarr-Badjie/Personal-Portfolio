@@ -6,7 +6,7 @@ export default function Home() {
   const [textContent] = useTypewriter({
     words: [
       "Software Engineer 🖥️",
-      "Frontend Developer 📱",
+      "Frontend Developer 👨‍💻",
       "React Developer ⚛️",
     ],
     loop: true,
