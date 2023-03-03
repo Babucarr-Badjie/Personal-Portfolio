@@ -42,6 +42,11 @@
     @apply py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne 
     text-center text-red-500 text-base tracking-wide animate-bounce;
   }
+   .footerIcons {
+   @apply w-10 h-10 rounded-none text-gray-200 text-2xl hover:bg-gray-900
+  inline-flex items-center justify-center shadow-shadowOne bg-gray-800
+  hover:bg-opacity-40 transition-all cursor-pointer duration-200;
+ }
 }
 
 .bgOpacity {

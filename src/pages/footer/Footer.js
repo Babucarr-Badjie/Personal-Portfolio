@@ -1,26 +1,56 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 
 import logo from "../../assests/images/logo.png";
 export default function Footer() {
   return (
-    <div className="w-full h-auto py-20 grid grid-col-2 gap-10 justify-center">
-      <div className="w-full h-full ">
-        <img className="w-14 h-auto" src={logo} alt="logo" />
-        <div className="flex gap-10">
-          <span className="text-2xl ">
-            <a
-              href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
-              target="_"
-            >
-              <FaLinkedin />
-            </a>
-          </span>
-          <span className="text-2xl">
-            <a href="https://github.com/Babucarr-Badjie" target="_">
-              <FaGithub />
-            </a>
-          </span>
+    <div>
+      <div className="w-full h-auto py-20 flex justify-between gap-10">
+        <div className="w-[50%] h-full ">
+          <img className="w-14 h-auto" src={logo} alt="logo" />
+          <div className="flex gap-10">
+            <span className="text-md py-5 justify-evenly">
+              <p>
+                A Web Developer focused on the Fronted of the websites and Web
+                Applications that leads to the success of the overall products.
+              </p>
+            </span>
+          </div>
         </div>
+        <div className="w-[50%] h-full  ">
+          <h1 className="flex justify-center tracking-widest text-xl font-bold">
+            SOCIALS
+          </h1>
+          <div className="flex gap-5 py-10 justify-center">
+            <span className="footerIcons">
+              <a
+                href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
+                target="_"
+              >
+                <FaLinkedin />
+              </a>
+            </span>
+            <span className="footerIcons">
+              <a href="https://www.facebook.com/babucarr.badjie.37" target="_">
+                <FaFacebook />
+              </a>
+            </span>
+            <span className="footerIcons">
+              <a href="https://www.instagram.com/bax_bagie/" target="_">
+                <FaInstagram />
+              </a>
+            </span>
+            <span className="footerIcons">
+              <a href="https://github.com/Babucarr-Badjie" target="_">
+                <FaGithub />
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="  w-full h-auto border-t-[1px] border-t-black">
+        <p className=" text-center py-5 text-sm">
+          &copy; 2023. Design and written by <i>Babucarr Badjie</i>
+        </p>
       </div>
     </div>
   );
