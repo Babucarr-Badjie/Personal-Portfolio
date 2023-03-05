@@ -10,7 +10,9 @@ export default function Skills() {
         className="mt-14 w-full h-full
         "
       >
-        <h2 className="text-4xl font-bold  ">Development Skills</h2>
+        <h2 className="text-xl largerTablet:text-4xl font-bold ">
+          Development Skills
+        </h2>
         <div className="w-full mt-14 overflow-x-hidden">
           <p className="text-md font-medium font-bodyFont">HTML</p>
           <span className="w-full h-2 inline-flex bgOpacity rounded-md mt-5">

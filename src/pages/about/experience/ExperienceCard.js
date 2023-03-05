@@ -23,30 +23,35 @@ export default function ExperienceCard({
       </div>
       <div
         className="w-full bg-black bg-opacity-20 hover:bg-opacity-30
-        duration-300 rounded-lg px-10 flex flex-col gap-10 shadow-shadowOne"
+        duration-300 rounded-lg px-6 flex flex-col gap-10 shadow-shadowOne"
       >
-        <div className="flex justify-between items-center">
+        <div
+          className="py-4 largerTablet:flex largerTablet:justify-between 
+        largerTablet:items-center largerLaptop:px-10"
+        >
           <div>
             <h2
-              className="text-3xl font-bold mt-5 group-hover:text-textColor
-              duration-300"
+              className=" text-xl smallerTablet:text-3xl font-bold mt-5
+               group-hover:text-textColor duration-300"
             >
               {company}
             </h2>
 
-            <p className=" mt-3">{description}</p>
-            <p className=" mt-4 ">{`Postion: ${title}`}</p>
-            <h4 className="mt-4 text-xl font-bold">Key Responsibities:</h4>
-            <p className="mt-4 ">{roleOne}</p>
-            <p className="mt-4 ">{roleTwo}</p>
-            <p className=" mt-4 ">{roleThree}</p>
-            <p className="mt-4">{roleFour}</p>
+            <p className="text-sm largerTablet:text-lg mt-3">{description}</p>
+            <p className="text-sm largerTablet:text-lg mt-4 ">{`Postion: ${title}`}</p>
+            <h4 className="mt-4 text-md largerTablet:text-xl font-bold">
+              Key Responsibities:
+            </h4>
+            <p className="text-sm largerTablet:text-lg mt-4 ">{roleOne}</p>
+            <p className="text-sm largerTablet:text-lg mt-4 ">{roleTwo}</p>
+            <p className="text-sm largerTablet:text-lg mt-4 ">{roleThree}</p>
+            <p className="text-sm largerTablet:text-lg mt-4 mb-4">{roleFour}</p>
           </div>
           <div>
             <h3
               className="w-60 h-12 text-designColor bg-black 
               bg-opacity-25 rounded-lg flex justify-center items-center
-              shadow-shadowOne text-md px-2 font-medium "
+              shadow-shadowOne text-md font-medium "
             >
               {time}
             </h3>

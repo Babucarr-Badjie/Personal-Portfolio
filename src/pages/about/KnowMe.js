@@ -9,8 +9,8 @@ export default function KnowMe() {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="mt-14"
     >
-      <h2 className="text-4xl font-bold ">Career Objective</h2>
-      <p className="text-lg leading-8 py-5">
+      <h2 className="text-xl largerTablet:text-4xl font-bold ">Career Objective</h2>
+      <p className="text-md smallerTablet:text-xl leading-8 py-5">
         I am an accomplished Frontend Web Developer with a proven track record
         of developing high-quality, engaging and successful websites and web
         applications. From the very moment I typed my first "Hello World" into

@@ -4,11 +4,11 @@ import logo from "../../assests/images/logo.png";
 export default function Footer() {
   return (
     <div>
-      <div className="w-full h-auto py-20 flex justify-between gap-10">
-        <div className="w-[50%] h-full ">
+      <div className="w-full flex flex-col largerLaptop:flex-row h-auto py-20 justify-between gap-10">
+        <div className="w-full largerLaptop:w-[50%] h-full ">
           <img className="w-14 h-auto" src={logo} alt="logo" />
           <div className="flex gap-10">
-            <span className="text-md py-5 justify-evenly">
+            <span className="text-sm largerLaptop:text-md py-5 justify-evenly">
               <p>
                 A Web Developer focused on the Fronted of the websites and Web
                 Applications that leads to the success of the overall products.
@@ -16,8 +16,9 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <div className="w-[50%] h-full  ">
-          <h1 className="flex justify-center tracking-widest text-xl font-bold">
+        <div className="w-full flex flex-col largerLaptop:w-[50%] h-full  ">
+          <h1 className="flex justify-center tracking-widest text-md 
+          largerLaptop:text-xl font-bold">
             SOCIALS
           </h1>
           <div className="flex gap-5 py-10 justify-center">

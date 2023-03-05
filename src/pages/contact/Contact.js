@@ -61,42 +61,50 @@ export default function Contact() {
       <div className="flex justify-center mt-5">
         <h1 className="text-3xl font-extrabold">CONTACT ME</h1>
       </div>
-      <div className="w-full">
-        <div className="w-full h-auto flex justify-between mt-10">
+      <div className="w-full ">
+        <div
+          className="w-full h-auto flex flex-col smallerLaptop:flex-row 
+        justify-between mt-10"
+        >
           {/* contact left side */}
           <div
-            className="w-[35%] h-full bg-gradient-to-r from-[#1e2024] 
-          to-[#23272b] p-8 rounded-lg shadow-shadowOne"
+            className="w-full smallerLaptop:w-[35%] h-full bg-gradient-to-r from-[#1e2024] 
+          to-[#23272b] p-4 smallerLaptop:p-8 rounded-lg shadow-shadowOne"
           >
             <img
               className="w-full h-64 object-fill rounded-lg mb-3"
               src={contactImage}
               alt="contact"
             />
-            <div className="flex flex-col gap-4">
-              <h3 className="uppercase text-2xl font-bold">Babucarr Badjie</h3>
+            <div className="flex flex-col gap-4 justify-between items-center">
+              <h3 className="uppercase text-xl smallerLaptop:text-2xl font-bold">
+                Babucarr Badjie
+              </h3>
               <p className="tracking-widest ">Software Developer</p>
               <p className="tracking-widest uppercase font-bold">
                 Let's get in touch
               </p>
               <ul className="flex flex-col gap-5">
                 <li>
-                  <FaPhone className="text-xl" />
-                  <p className="text-l font-bold tracking-widest">
+                  <FaPhone className="text-md largerTablet:text-xl" />
+                  <p className="text-md smallerLaptop:text-l font-bold tracking-widest">
                     +886 0978141935
                   </p>
                 </li>
                 <li>
-                  <AiOutlineMail className="text-2xl" />
-                  <p className="">babucarr.badjie12@gmail.com</p>
+                  <AiOutlineMail className="text-md smallerLaptop:text-xl" />
+                  <p>babucarr.badjie12@gmail.com</p>
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col">
-              <h1 className="tracking-widest uppercase font-bold py-5 italic ">
-                Find me on
-              </h1>
-              <div className="flex gap-10 mt-2">
+            <div className="flex flex-col ">
+              <div className="flex flex-col gap-4 justify-between items-center">
+                <h1 className="tracking-widest uppercase font-bold py-5 italic  ">
+                  Find me on
+                </h1>
+              </div>
+
+              <div className="flex gap-5 smallerLaptop:gap-10 mt-2">
                 <span className="contactIcon">
                   <a
                     href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
@@ -130,17 +138,20 @@ export default function Contact() {
 
           {/* ================contact right side ======================= */}
           <div
-            className="w-[60%] h-full flex flex-col py-10 px-5 bg-gradient-to-r 
-          from-[#1e2024] to-[#23272b] gap-8 rounded-lg shadow-shadowOne
+            className="w-full flex flex-col smallerLaptop:w-[60%] h-full  p-4 smallerLaptop:8
+             bg-gradient-to-r from-[#1e2024] to-[#23272b] gap-8 
+             rounded-lg shadow-shadowOne
           "
           >
-            <form className="w-full">
+            <form className="w-full flex flex-col ">
               {/* =====display error meesage when fiels not filled  */}
               {errorMessage && <p className="fail">{errorMessage}</p>}
 
-              <div className="w-100% flex gap-5">
-                <div className="w-[50%] flex flex-col gap-3">
-                  <p className="text-md tracking-wider ">Your Name:</p>
+              <div className="w-full flex gap-5">
+                <div className="w-full smallerLaptop:w-[50%] flex flex-col gap-3">
+                  <p className="text-sm smallerLaptop:text-md tracking-wider ">
+                    Your Name:
+                  </p>
                   <input
                     onChange={(e) => setUserName(e.target.value)}
                     value={userName}
@@ -150,11 +161,12 @@ export default function Contact() {
                     } contactFieldInputs`}
                     type="text"
                     name="name"
-                    required
                   />
                 </div>
-                <div className="w-[50%] flex flex-col gap-3">
-                  <p className="text-md tracking-wider ">Contact Number:</p>
+                <div className="w-full smallerLaptop:w-[50%] flex flex-col gap-3">
+                  <p className="text-sm smallerLaptop:text-md tracking-wider ">
+                    Contact Number:
+                  </p>
                   <input
                     onChange={(e) => setContactNumber(e.target.value)}
                     value={contactNumber}
@@ -164,13 +176,14 @@ export default function Contact() {
                     } contactFieldInputs`}
                     type="text"
                     name="phone number"
-                    required
                   />
                 </div>
               </div>
-              <div className="w-100% flex gap-5 py-8">
-                <div className="w-[50%] flex flex-col gap-3">
-                  <p className="text-md tracking-wider ">Company Name:</p>
+              <div className="w-full flex gap-5 py-8">
+                <div className="w-full smallerLaptop:w-[50%] flex flex-col gap-3">
+                  <p className="text-sm smallerLaptop:text-md tracking-wider ">
+                    Company Name:
+                  </p>
                   <input
                     onChange={(e) => setCompanyName(e.target.value)}
                     value={comapanyName}
@@ -180,11 +193,12 @@ export default function Contact() {
                     } contactFieldInputs`}
                     type="text"
                     name="company name"
-                    required
                   />
                 </div>
-                <div className="w-[50%] flex flex-col gap-3 ">
-                  <p className="text-md tracking-wider ">Your position:</p>
+                <div className="w-full smallerLaptop:w-[50%] flex flex-col gap-3">
+                  <p className="text-sm smallerLaptop:text-md tracking-wider">
+                    Position:
+                  </p>
                   <input
                     onChange={(e) => setUserPostion(e.target.value)}
                     value={userPosition}
@@ -194,12 +208,13 @@ export default function Contact() {
                     } contactFieldInputs`}
                     type="text"
                     name="position"
-                    required
                   />
                 </div>
               </div>
-              <div className="w-100% py-3">
-                <p className="text-md tracking-wider ">Email Address:</p>
+              <div className="w-full flex flex-col gap-3 ">
+                <p className="text-sm smallerLaptop:text-md tracking-wider">
+                  Email Address:
+                </p>
                 <input
                   onChange={(e) => setUserEmail(e.target.value)}
                   value={userEmail}
@@ -211,8 +226,10 @@ export default function Contact() {
                   name="email"
                 />
               </div>
-              <div className="w-100%  py-3">
-                <p className="text-md tracking-wider mb-3">Write message:</p>
+              <div className="w-full flex flex-col gap-3 py-10">
+                <p className="text-sm smallerLaptop:text-md tracking-wider ">
+                  Write message:
+                </p>
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
@@ -221,14 +238,14 @@ export default function Contact() {
                     "outline-designColor"
                   } contactTextArea`}
                   name="Message"
-                  rows="7"
+                  rows="10"
                 ></textarea>
               </div>
               <div>
                 <button
                   onClick={handleClick}
                   className="w-full h-12 rounded-lg bg-orange-200
-                hover:border-[2px]  font-bold
+                hover:border-[2px]  font-bold 
                 hover:bg-white text-black transition-all duration-300"
                 >
                   SEND MESSAGE

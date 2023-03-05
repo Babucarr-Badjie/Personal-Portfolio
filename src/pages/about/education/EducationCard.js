@@ -16,22 +16,26 @@ export default function EducationCard({ header, time, school, major }) {
         className="w-full bg-black bg-opacity-20 hover:bg-opacity-30
         duration-300 rounded-lg px-10 flex flex-col gap-10 shadow-shadowOne"
       >
-        <div className="flex justify-between items-center">
+        <div
+          className="flex flex-col largerLaptop:flex-row largerLaptop:px-10
+          justify-between smallerTablet:items-center py-4"
+        >
           <div>
             <h2
-              className="text-3xl font-bold mt-5 group-hover:text-textColor
-              duration-300"
+              className="text-xl largerTablet:text-3xl font-bold mt-5
+               group-hover:text-textColor duration-300"
             >
               {header}
             </h2>
-            <p className="text-lg mt-6">{school}</p>
-            <p className="text-lg mt-6 mb-6">{major}</p>
+            <p className="text-sm largerTablet:text-lg mt-6">{school}</p>
+            <p className="text-sm largerTablet:text-lg mt-6 mb-6">{major}</p>
           </div>
           <div>
             <h3
-              className="w-30 h-12 text-designColor bg-black 
+              className="px-4 py-2 text-designColor bg-black 
               bg-opacity-25 rounded-lg flex justify-center items-center
-              shadow-shadowOne text-md px-2 font-medium"
+              shadow-shadowOne text-sm largerTablet:text-md 
+              smallerTablet:font-medium font-bold"
             >
               {time}
             </h3>

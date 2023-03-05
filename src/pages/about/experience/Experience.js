@@ -11,10 +11,12 @@ export default function Experience() {
         className="mt-14 w-full h-auto border-l-[5px] border-black
         border-opacity-30 flex flex-col gap-10"
       >
-        <h2 className="text-4xl font-bold ml-5 ">Job Experience</h2>
+        <h2 className="text-xl smallerTablet:text-4xl font-bold ml-5 ">
+          Job Experience
+        </h2>
         <ExperienceCard
           company="Marketech International Corp. (MIC), Gas Division"
-          description="A Semiconductor producing company"
+          description="A Semiconductor Equipments producing company"
           title="Technical Engineer"
           roleOne="Review customers’ technical documents."
           roleTwo="Responsible for creating standard operating procedures (SOP) for manufacturing products."
@@ -24,7 +26,7 @@ export default function Experience() {
         />
         <ExperienceCard
           company="Lily English Language School"
-          description="A Semiconductor producing company"
+          description="English Language Cram School"
           title="English Teacher"
           roleOne="Prepare Lesson Plans."
           roleTwo="Prepare students for Cambridge English Language Assessment (Starters, Movers & Flyers) which involve reading, writing, listening, and speaking."

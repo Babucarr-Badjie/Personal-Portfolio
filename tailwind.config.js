@@ -3,6 +3,18 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+
+      // Responsiveness
+      screens: {
+        smallerPhone: "320px",
+        mediumPhones: "390px",
+        largerPhones: "500px",
+        smallerTablet: "680px",
+        largerTablet: "768px",
+        smallerLaptop: "960px",
+        largerLaptop: "1024px",
+        largeScreen: "1280px",
+      },
       // define fonts for the body and title
       fontFamily: {
         bodyFont: ["Poppins", "sans-serif"],

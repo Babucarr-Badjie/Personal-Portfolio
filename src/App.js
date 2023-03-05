@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="h-auto w-full bg-bodyColor text-lightText px-5">
       <Navbar />
-      <div className="max-w-screen-3xl mx-auto ml-10 mr-10 ">
+      <div className="max-w-screen-xl mx-auto ">
         <Home />
         <About />
         <Project />

@@ -21,7 +21,11 @@ export default function About() {
         <h1 className="text-3xl font-extrabold">ABOUT ME</h1>
       </div>
       <div>
-        <ul className="w-full grid grid-cols-4 py-10  uppercase tracking-widest">
+        <ul
+          className="w-full grid grid-cols-1 largerTablet:grid-cols-2 
+          largerLaptop:grid-cols-4 largerLaptop:py-10 py-4 uppercase 
+          tracking-widest"
+        >
           <li
             onClick={() =>
               setKnowMeData(true) &

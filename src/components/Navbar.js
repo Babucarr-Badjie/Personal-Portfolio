@@ -1,8 +1,15 @@
 import { navbarLinks } from "../assests/NavbarData";
 import { Link } from "react-scroll";
 import logo from "../assests/images/logo.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+import {GrClose} from "react-icons/gr"
+import { useState } from "react";
 
 export default function Navbar() {
+
+  // toggle hamburger menu
+
+  const [hamburgerMenu, setHamburgerMenu] = useState(false)
   return (
     <div
       className="w-full h-34 mx-auto flex justify-between items-center 
@@ -18,7 +25,10 @@ export default function Navbar() {
         <span className="tracking-widest cursor-pointer">Babucarr</span>
       </div>
       <div>
-        <ul className="flex items-center gap-10">
+        <ul
+          className="hidden largerTablet:inline-flex items-center gap-5
+         largerLaptop:gap-10"
+        >
           {navbarLinks.map((navbarLink) => (
             <li
               className="text-xl font-normal text-gray-200 tracking-wide 
@@ -37,6 +47,12 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <span
+          className="inline-flex justify-center items-center
+        text-xl largerTablet:hidden bg-black rounded-full cursor-pointer"
+        >
+          <GiHamburgerMenu />
+        </span>
       </div>
     </div>
   );
