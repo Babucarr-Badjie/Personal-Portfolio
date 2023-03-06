@@ -44,7 +44,9 @@ export default function ProjectCard({
             </span>
           </div>
         </div>
-        <div className="mt-5">{projectDescription}</div>
+        <div className="mt-5 text-md largerTablet:text-xl">
+          {projectDescription}
+        </div>
       </div>
     </div>
   );

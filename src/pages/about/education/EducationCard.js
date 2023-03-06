@@ -17,8 +17,8 @@ export default function EducationCard({ header, time, school, major }) {
         duration-300 rounded-lg px-10 flex flex-col gap-10 shadow-shadowOne"
       >
         <div
-          className="flex flex-col largerLaptop:flex-row largerLaptop:px-10
-          justify-between smallerTablet:items-center py-4"
+          className=" largerTablet:flex largerLaptop:px-10 
+          largerTablet:justify-between largerTablet:items-center py-4"
         >
           <div>
             <h2
