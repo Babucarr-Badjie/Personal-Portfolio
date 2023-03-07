@@ -37,7 +37,7 @@ export default function Home() {
               Babucarr
             </span>{" "}
           </h1>
-          <h2 className="text-xl largerTablet:text-2xl font-extrabold ">
+          <h2 className="text-xl largerTablet:text-3xl font-extrabold ">
             a <span>{textContent}</span>
           </h2>
           <p className="leading-9 tracking-widest text-md largerTablet:text-xl ">

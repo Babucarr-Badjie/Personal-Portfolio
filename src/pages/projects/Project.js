@@ -57,6 +57,8 @@ export default function Project() {
         />
         <ProjectCard />
         <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </section>
   );
