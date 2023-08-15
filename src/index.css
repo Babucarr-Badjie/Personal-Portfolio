@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======styling home (profile) icons */
+
+@layer components {
+  .profileIcon {
+    @apply w-10 h-10 bg-black rounded-full text-gray-200 text-2xl 
+    inline-flex items-center justify-center shadow-shadowOne
+    hover:bg-opacity-40 hover:translate-y-1 transition-all
+    hover:text-orange-500 cursor-pointer duration-200;
+  }
+  .about-me {
+    @apply w-full h-20 bg-black bg-opacity-25 text-lg largerTablet:text-xl
+  text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40
+    duration-300 items-center border-[1px] rounded-none;
+  }
+  .contactIcon {
+    @apply w-20 h-10 rounded-none text-gray-200 text-2xl 
+   inline-flex items-center justify-center shadow-shadowOne
+   hover:bg-opacity-40 transition-all
+   hover:text-red-600 cursor-pointer duration-200;
+  }
+  .contactFieldInputs {
+    @apply w-full h-10 rounded-md border-b-[1px] px-3 text-white bg-[#191b1e]
+    active:outline-none focus-visible:outline-colorNeutral outline-none
+    focus-visible:border-b-transparent duration-300 border-b-gray-600;
+  }
+  .contactTextArea {
+    @apply w-full rounded-md border-b-[1px] px-3 text-white bg-[#191b1e]
+    active:outline-none focus-visible:outline-colorNeutral outline-none
+     focus-visible:border-b-transparent duration-300 border-b-gray-600;
+  }
+  .success {
+    @apply py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne
+     text-center text-green-500 text-base tracking-wide animate-bounce;
+  }
+  .fail {
+    @apply py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne 
+    text-center text-red-500 text-base tracking-wide animate-bounce;
+  }
+  .footerIcons {
+    @apply w-10 h-10 rounded-none text-gray-200 text-2xl hover:bg-gray-900
+  inline-flex items-center justify-center shadow-shadowOne bg-gray-800
+  hover:bg-opacity-40 transition-all cursor-pointer duration-200 
+  hover:translate-y-1;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none
+  }
+}
+
+.bgOpacity {
+  @apply bg-black bg-opacity-40;
+}
+
+.active {
+  color: #0e87a5;
+}
