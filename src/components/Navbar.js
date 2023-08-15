@@ -96,7 +96,6 @@ export default function Navbar() {
           </div>
         )}
       </div>
-      <div>Hi there</div>
     </div>
   );
 }
