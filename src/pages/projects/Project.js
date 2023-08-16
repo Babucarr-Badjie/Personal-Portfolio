@@ -39,7 +39,7 @@ export default function Project() {
         />
         <ProjectCard
           projectTitle="Diary App"
-          projectDescription="The app is used to list out all my upcoming 
+          projectDescription="The app is used to list out all the upcoming 
           events where the individual can key in the event title, date and 
           the location. The main tools used in this project are React.js 
           and CSS3. "
