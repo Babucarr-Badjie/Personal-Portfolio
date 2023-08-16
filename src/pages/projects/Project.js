@@ -41,7 +41,7 @@ export default function Project() {
           projectTitle="Diary App"
           projectDescription="The app is used to list out all my upcoming 
           events where the individual can key in the event title, date and 
-          the location. The main tools used in this project is React.js 
+          the location. The main tools used in this project are React.js 
           and CSS3. "
           src={projectTwo}
           githubLink={
