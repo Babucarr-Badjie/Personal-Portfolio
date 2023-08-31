@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import projectOne from "../../assests/images/matching-game.PNG";
 import projectTwo from "../../assests/images/event-tracking.PNG";
 import projectThree from "../../assests/images/Budget.png";
+import projectFour from "../../assests/images/weatherApp.png";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
@@ -57,18 +58,31 @@ export default function Project() {
           }
         />
         <ProjectCard
-          projectTitle="Budget Tracker App"
+          projectTitle="Budget Tracker"
           projectDescription="This Budget tracker App is a user-friendly
           web application developed using React.js and Tailwind CSS 
           that empowers users to effectively manage their finances 
-          and track their expenses. This app aims to provide a 
-          seamless and intuitive interface for users to create 
-          accounts, record their income and expenses.
-          This App also utilized the used of React Toastify to add 
-          notifications."
+          and track their expenses."
           src={projectThree}
         />
-        <ProjectCard />
+        <ProjectCard
+          projectTitle="Weather App"
+          projectDescription="The weather app is a simple app that provides 
+        weather information for various locations. It utilizes the AccuWeather API
+        to fetch and display weather data. It is designed using vanila 
+        JavaScript and Bootstrap for styling."
+          src={projectFour}
+          githubLink={
+            <a href="https://github.com/Babucarr-Badjie/Weather-App" target="_">
+              <FaGithub />
+            </a>
+          }
+          websiteLink={
+            <a href="https://delightful-youtiao-5d3c07.netlify.app" target="_">
+              <FaGlobe />
+            </a>
+          }
+        />
         <ProjectCard />
         <ProjectCard />
       </div>
