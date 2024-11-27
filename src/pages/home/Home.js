@@ -26,7 +26,7 @@ export default function Home() {
       >
         <div className="flex flex-col gap-6 ">
           <h4 className="text-md font-normal largerTablet:text-xl  ">
-            Hello there! Welcome to my World.{" "}
+            Hello there! Welcome to my World 😁.{" "}
           </h4>
           <h1 className="font-normal text:xl largerTablet:text-3xl leading-normal">
             I'm{" "}
