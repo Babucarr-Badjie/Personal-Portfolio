@@ -3,6 +3,7 @@ import projectOne from "../../assests/images/matching-game.PNG";
 import projectTwo from "../../assests/images/event-tracking.PNG";
 import projectThree from "../../assests/images/Budget.png";
 import projectFour from "../../assests/images/weatherApp.png";
+import projectFive from '../../assests/images/rock-paper-siccors.png'
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
@@ -83,7 +84,26 @@ export default function Project() {
             </a>
           }
         />
-        <ProjectCard />
+        <ProjectCard
+          projectTitle="Rock Paper Scissors App"
+          projectDescription="This application was developed using React, leveraging the useState hook 
+          to manage component states efficiently. The core functionality allows users to engage in a
+            classic game of Rock-Paper-Scissors against the computer."
+          src={projectFive}
+          githubLink={
+            <a
+              href="https://github.com/Babucarr-Badjie/rock-paper-scissors-game-app"
+              target="_"
+            >
+              <FaGithub />
+            </a>
+          }
+          websiteLink={
+            <a href="https://resonant-alpaca-0bf24b.netlify.app" target="_">
+              <FaGlobe />
+            </a>
+          }
+        />
         <ProjectCard />
       </div>
     </section>
