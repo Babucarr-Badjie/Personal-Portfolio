@@ -10,15 +10,17 @@ export default function Footer() {
           <div className="flex gap-10">
             <span className="text-sm largerLaptop:text-md py-5 justify-evenly">
               <p>
-                A Web Developer focused on the Fronted of the websites and Web
+                A Web Developer focused on the Frontend of the websites and Web
                 Applications that leads to the success of the overall products.
               </p>
             </span>
           </div>
         </div>
         <div className="w-full flex flex-col largerLaptop:w-[50%] h-full  ">
-          <h1 className="flex justify-center tracking-widest text-md 
-          largerLaptop:text-xl font-bold">
+          <h1
+            className="flex justify-center tracking-widest text-md 
+          largerLaptop:text-xl font-bold"
+          >
             SOCIALS
           </h1>
           <div className="flex gap-5 py-10 justify-center">
@@ -50,7 +52,7 @@ export default function Footer() {
       </div>
       <div className="  w-full h-auto border-t-[1px] border-t-black">
         <p className=" text-center py-5 text-sm">
-          Copyright &copy; 2023. Design and written by <i>Babucarr </i>
+          Copyright &copy; 2024. Design and written by <i>Babucarr </i>
         </p>
       </div>
     </div>
