@@ -3,7 +3,8 @@ import projectOne from "../../assests/images/matching-game.PNG";
 import projectTwo from "../../assests/images/event-tracking.PNG";
 import projectThree from "../../assests/images/Budget.png";
 import projectFour from "../../assests/images/weatherApp.png";
-import projectFive from '../../assests/images/rock-paper-siccors.png'
+import projectFive from "../../assests/images/rock-paper-siccors.png";
+import projectSix from "../../assests/images/to-do-app-image.png";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
@@ -104,7 +105,26 @@ export default function Project() {
             </a>
           }
         />
-        <ProjectCard />
+        <ProjectCard
+          projectTitle="To-Do Task Application"
+          projectDescription="To-Do Task application was built using React. The app allows users to add,
+           view, and manage tasks efficiently. The application utilizes React's useState hook to handle state management 
+           and props to pass data between components."
+          src={projectSix}
+          githubLink={
+            <a
+              href="https://github.com/Babucarr-Badjie/task-todo-app"
+              target="_"
+            >
+              <FaGithub />
+            </a>
+          }
+          websiteLink={
+            <a href="https://moonlit-narwhal-090d91.netlify.app" target="_">
+              <FaGlobe />
+            </a>
+          }
+        />
       </div>
     </section>
   );
