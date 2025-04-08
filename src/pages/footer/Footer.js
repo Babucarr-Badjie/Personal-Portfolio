@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
       <div className="  w-full h-auto border-t-[1px] border-t-black">
         <p className=" text-center py-5 text-sm">
-          Copyright &copy; 2024. Design and written by <i>Babucarr </i>
+          Copyright &copy; 2025. Design and written by <i>Babucarr </i>
         </p>
       </div>
     </div>
