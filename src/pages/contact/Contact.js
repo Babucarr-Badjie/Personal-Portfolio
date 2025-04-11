@@ -9,7 +9,7 @@ export default function Contact() {
   const [userName, setUserName] = useState("");
   const [contactNumber, setContactNumber] = useState("");
   const [comapanyName, setCompanyName] = useState("");
-  const [userPosition, setUserPostion] = useState("");
+  const [userPosition, setUserPosition] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -47,7 +47,7 @@ export default function Contact() {
       setUserName("");
       setContactNumber("");
       setCompanyName("");
-      setUserPostion("");
+      setUserPosition("");
       setUserEmail("");
       setMessage("");
     }
@@ -110,7 +110,7 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
                     target="_"
                   >
-                    <FaLinkedin />
+                    <FaLinkedin title="LinkedIn" />
                   </a>
                 </span>
                 <span className="contactIcon">
@@ -118,17 +118,17 @@ export default function Contact() {
                     href="https://www.facebook.com/babucarr.badjie.37"
                     target="_"
                   >
-                    <FaFacebook />
+                    <FaFacebook title="Facebook" />
                   </a>
                 </span>
                 <span className="contactIcon">
                   <a href="https://www.instagram.com/bax_bagie/" target="_">
-                    <FaInstagram />
+                    <FaInstagram title="Instagram" />
                   </a>
                 </span>
                 <span className="contactIcon">
                   <a href="https://github.com/Babucarr-Badjie" target="_">
-                    <FaGithub />
+                    <FaGithub title="Github" />
                   </a>
                 </span>
               </div>
@@ -144,7 +144,7 @@ export default function Contact() {
           "
           >
             <form className="w-full flex flex-col ">
-              {/* =====display error meesage when fiels not filled  */}
+              {/* =====display error message when fields not filled  */}
               {errorMessage && <p className="fail">{errorMessage}</p>}
 
               <div className="w-full flex gap-5">
@@ -200,7 +200,7 @@ export default function Contact() {
                     Position:
                   </p>
                   <input
-                    onChange={(e) => setUserPostion(e.target.value)}
+                    onChange={(e) => setUserPosition(e.target.value)}
                     value={userPosition}
                     className={`${
                       errorMessage === "Position description is required!" &&
@@ -252,7 +252,7 @@ export default function Contact() {
                 </button>
               </div>
 
-              {/* ========Display successful message when the message is sent sucessfully== */}
+              {/* ========Display successful message when the message is sent successfully== */}
               <div className="mt-4">
                 {successMessage && <p className="success">{successMessage}</p>}
               </div>

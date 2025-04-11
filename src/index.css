@@ -49,7 +49,7 @@
   hover:translate-y-1;
   }
   .scrollbar-hide::-webkit-scrollbar {
-    display: none
+    display: none;
   }
 }
 

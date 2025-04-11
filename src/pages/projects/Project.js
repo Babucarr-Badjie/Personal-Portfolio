@@ -32,12 +32,12 @@ export default function Project() {
               href="https://github.com/Babucarr-Badjie/Matching-images-game"
               target="_"
             >
-              <FaGithub />
+              <FaGithub title="github" />
             </a>
           }
           websiteLink={
             <a href="https://lively-medovik-4d7614.netlify.app/" target="_">
-              <FaGlobe />
+              <FaGlobe title="website" />
             </a>
           }
         />
@@ -50,12 +50,12 @@ export default function Project() {
           src={projectTwo}
           githubLink={
             <a href="https://github.com/Babucarr-Badjie/Events-App" target="_">
-              <FaGithub />
+              <FaGithub title="github" />
             </a>
           }
           websiteLink={
             <a href="https://comfy-syrniki-260454.netlify.app/" target="_">
-              <FaGlobe />
+              <FaGlobe title="website" />
             </a>
           }
         />
@@ -76,12 +76,12 @@ export default function Project() {
           src={projectFour}
           githubLink={
             <a href="https://github.com/Babucarr-Badjie/Weather-App" target="_">
-              <FaGithub />
+              <FaGithub title="github" />
             </a>
           }
           websiteLink={
             <a href="https://delightful-youtiao-5d3c07.netlify.app" target="_">
-              <FaGlobe />
+              <FaGlobe title="website" />
             </a>
           }
         />
@@ -96,12 +96,12 @@ export default function Project() {
               href="https://github.com/Babucarr-Badjie/rock-paper-scissors-game-app"
               target="_"
             >
-              <FaGithub />
+              <FaGithub title="github" />
             </a>
           }
           websiteLink={
             <a href="https://resonant-alpaca-0bf24b.netlify.app" target="_">
-              <FaGlobe />
+              <FaGlobe title="website" />
             </a>
           }
         />
@@ -116,12 +116,12 @@ export default function Project() {
               href="https://github.com/Babucarr-Badjie/task-todo-app"
               target="_"
             >
-              <FaGithub />
+              <FaGithub title="github" />
             </a>
           }
           websiteLink={
             <a href="https://moonlit-narwhal-090d91.netlify.app" target="_">
-              <FaGlobe />
+              <FaGlobe title="website" />
             </a>
           }
         />

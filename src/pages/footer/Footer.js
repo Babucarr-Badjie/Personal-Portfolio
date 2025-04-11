@@ -29,22 +29,22 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
                 target="_"
               >
-                <FaLinkedin />
+                <FaLinkedin title="LinkedIn" />
               </a>
             </span>
             <span className="footerIcons">
               <a href="https://www.facebook.com/babucarr.badjie.37" target="_">
-                <FaFacebook />
+                <FaFacebook title="Facebook" />
               </a>
             </span>
             <span className="footerIcons">
               <a href="https://www.instagram.com/bax_bagie/" target="_">
-                <FaInstagram />
+                <FaInstagram title="Instagram" />
               </a>
             </span>
             <span className="footerIcons">
               <a href="https://github.com/Babucarr-Badjie" target="_">
-                <FaGithub />
+                <FaGithub title="Github" />
               </a>
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
       <div className="  w-full h-auto border-t-[1px] border-t-black">
         <p className=" text-center py-5 text-sm">
-          Copyright &copy; 2025. Design and written by <i>Babucarr </i>
+          Copyright &copy; 2025. Design and written by <i>Babucarr Badjie</i>
         </p>
       </div>
     </div>

@@ -53,7 +53,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/babucarr-badjie-9702b6134/"
                 target="_"
               >
-                <FaLinkedin />
+                <FaLinkedin title="LinkedIn" />
               </a>
             </span>
             <span className="profileIcon">
@@ -62,17 +62,17 @@ export default function Home() {
                 target="_
               "
               >
-                <FaFacebook />
+                <FaFacebook title="Facebook" />
               </a>
             </span>
             <span className="profileIcon">
               <a href="https://www.instagram.com/bax_bagie/" target="_">
-                <FaInstagram />
+                <FaInstagram title="Instagram" />
               </a>
             </span>
             <span className="profileIcon">
               <a href="https://github.com/Babucarr-Badjie" target="_">
-                <FaGithub />
+                <FaGithub title="Github" />
               </a>
             </span>
           </div>
