@@ -11,7 +11,7 @@ export default function Home() {
     ],
     loop: true,
     typeSpeed: 80,
-    deleteSpped: 50,
+    deleteSpeed: 50,
     delaySpeed: 1500,
   });
   return (
@@ -41,7 +41,8 @@ export default function Home() {
             a <span>{textContent}</span>
           </h2>
           <p className="leading-9 tracking-widest text-md largerTablet:text-xl ">
-            Capable of building applications with frontend operations.
+            Skilled in developing applications with a strong focus on front-end
+            functionality and user experience..
           </p>
         </div>
         <div>
