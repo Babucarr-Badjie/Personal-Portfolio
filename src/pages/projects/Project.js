@@ -1,10 +1,10 @@
 import ProjectCard from "./ProjectCard";
 import projectOne from "../../assests/images/matching-game.PNG";
 import projectTwo from "../../assests/images/event-tracking.PNG";
-import projectThree from "../../assests/images/Budget.png";
-import projectFour from "../../assests/images/weatherApp.png";
-import projectFive from "../../assests/images/rock-paper-siccors.png";
-import projectSix from "../../assests/images/to-do-app-image.png";
+import projectThree from "../../assests/images/weatherApp.png";
+import projectFour from "../../assests/images/rock-paper-siccors.png";
+import projectFive from "../../assests/images/to-do-app-image.png";
+import projectSix from "../../assests/images/workout-image.png";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
@@ -59,21 +59,14 @@ export default function Project() {
             </a>
           }
         />
-        <ProjectCard
-          projectTitle="Budget Tracker"
-          projectDescription="This Budget tracker App is a user-friendly
-          web application developed using React.js and Tailwind CSS 
-          that empowers users to effectively manage their finances 
-          and track their expenses."
-          src={projectThree}
-        />
+
         <ProjectCard
           projectTitle="Weather App"
           projectDescription="The weather app is a simple app that provides 
         weather information for various locations. It utilizes the AccuWeather API
         to fetch and display weather data. It is designed using vanila 
         JavaScript and Bootstrap for styling."
-          src={projectFour}
+          src={projectThree}
           githubLink={
             <a href="https://github.com/Babucarr-Badjie/Weather-App" target="_">
               <FaGithub title="github" />
@@ -90,7 +83,7 @@ export default function Project() {
           projectDescription="This application was developed using React, leveraging the useState hook 
           to manage component states efficiently. The core functionality allows users to engage in a
             classic game of Rock-Paper-Scissors against the computer."
-          src={projectFive}
+          src={projectFour}
           githubLink={
             <a
               href="https://github.com/Babucarr-Badjie/rock-paper-scissors-game-app"
@@ -110,7 +103,7 @@ export default function Project() {
           projectDescription="To-Do Task application was built using React. The app allows users to add,
            view, and manage tasks efficiently. The application utilizes React's useState hook to handle state management 
            and props to pass data between components."
-          src={projectSix}
+          src={projectFive}
           githubLink={
             <a
               href="https://github.com/Babucarr-Badjie/task-todo-app"
@@ -121,6 +114,27 @@ export default function Project() {
           }
           websiteLink={
             <a href="https://moonlit-narwhal-090d91.netlify.app" target="_">
+              <FaGlobe title="website" />
+            </a>
+          }
+        />
+
+        <ProjectCard
+          projectTitle="Workout Plan App"
+          projectDescription="FitJourney is a 30-day workout tracker app. Users sign up, log in, and follow a structured plan, 
+          marking each day complete. Progress is saved per user, so you can return anytime, stay motivated, 
+          and continue your fitness journey."
+          src={projectSix}
+          githubLink={
+            <a
+              href="https://github.com/Babucarr-Badjie/workout-planner"
+              target="_"
+            >
+              <FaGithub title="github" />
+            </a>
+          }
+          websiteLink={
+            <a href="https://babucarr-fitjourney-app.netlify.app/" target="_">
               <FaGlobe title="website" />
             </a>
           }
