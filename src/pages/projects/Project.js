@@ -5,6 +5,7 @@ import projectThree from "../../assests/images/weatherApp.png";
 import projectFour from "../../assests/images/rock-paper-siccors.png";
 import projectFive from "../../assests/images/to-do-app-image.png";
 import projectSix from "../../assests/images/workout-image.png";
+import projectSeven from "../../assests/images/movie-banner.jpg";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Project() {
@@ -21,6 +22,7 @@ export default function Project() {
         className="grid grid-cols-1 largerLaptop:grid-cols-3 
         largerTablet:grid-cols-2 gap-12 largerLaptop:gap-28 mt-10"
       >
+        {/* Project 1 */}
         <ProjectCard
           projectTitle="Matching-images"
           projectDescription="The game is about flipping cards to match images. 
@@ -41,6 +43,8 @@ export default function Project() {
             </a>
           }
         />
+
+        {/* Project 2 */}
         <ProjectCard
           projectTitle="Diary App"
           projectDescription="The app is used to list out all the upcoming 
@@ -60,6 +64,7 @@ export default function Project() {
           }
         />
 
+        {/* Project 3 */}
         <ProjectCard
           projectTitle="Weather App"
           projectDescription="The weather app is a simple app that provides 
@@ -78,6 +83,8 @@ export default function Project() {
             </a>
           }
         />
+
+        {/* Project 4 */}
         <ProjectCard
           projectTitle="Rock Paper Scissors App"
           projectDescription="This application was developed using React, leveraging the useState hook 
@@ -98,6 +105,8 @@ export default function Project() {
             </a>
           }
         />
+
+        {/* Project 5 */}
         <ProjectCard
           projectTitle="To-Do Task Application"
           projectDescription="To-Do Task application was built using React. The app allows users to add,
@@ -119,6 +128,7 @@ export default function Project() {
           }
         />
 
+        {/* Project 6 */}
         <ProjectCard
           projectTitle="Workout Plan App"
           projectDescription="FitJourney is a 30-day workout tracker app. Users sign up, log in, and follow a structured plan, 
@@ -135,6 +145,25 @@ export default function Project() {
           }
           websiteLink={
             <a href="https://babucarr-fitjourney-app.netlify.app/" target="_">
+              <FaGlobe title="website" />
+            </a>
+          }
+        />
+
+        {/* Project 7 */}
+        <ProjectCard
+          projectTitle="Workout Plan App"
+          projectDescription="A modern React-based web application that allows users to browse, search, 
+          and discover movies using The Movie Database (TMDB) API. Users can view detailed information 
+          about each movie, add favorites, and enjoy a responsive, user-friendly interface."
+          src={projectSeven}
+          githubLink={
+            <a href="https://github.com/Babucarr-Badjie/Movie-App" target="_">
+              <FaGithub title="github" />
+            </a>
+          }
+          websiteLink={
+            <a href="https://babucarr-movie-app.netlify.app/" target="_">
               <FaGlobe title="website" />
             </a>
           }
