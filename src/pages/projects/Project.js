@@ -20,7 +20,7 @@ export default function Project() {
       </div>
       <div
         className="grid grid-cols-1 largerLaptop:grid-cols-3 
-        largerTablet:grid-cols-2 gap-12 largerLaptop:gap-28 mt-10"
+        largerTablet:grid-cols-2 gap-8 largerLaptop:gap-14 mt-10"
       >
         {/* Project 1 */}
         <ProjectCard
